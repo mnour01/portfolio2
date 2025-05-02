@@ -16,47 +16,48 @@ const projects: Project[] = [
   {
     title: 'ERP para Postos Linx.',
     description: 'ERP completo com dezenas de módulos para gerenciamento de postos de combustível.',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1170&auto=format&fit=crop',
-    tags: ['Vue.js', 'Nuxt.js', 'TypeScript', 'NuxtUI'],
-    liveUrl: 'https://example.com/project1',
+    image: '/assets/images/projects/erp_linx.jpg',
+    tags: ['Vue.js', 'Nuxt.js', 'TypeScript', 'NuxtUI', 'Node.js', 'NestJS', 'PostgreSQL'],
+    liveUrl: 'https://linx-app.mantor.dev/',
     
+  },
+  {
+    title: 'Plataforma de Imóveis NPi.',
+    description: 'Aplicação SSR focada em SEO e performance com Next.js. CMS com gerenciamento de imóveis e clientes.',
+    image: '/assets/images/projects/npi.jpg',
+    tags: ['Next.js', 'TypeScript', 'TailwindCSS', 'MongoDB', 'AWS'],
+    liveUrl: 'https://www.npiconsultoria.com.br/',
+   
   },
   {
     title: 'E-commerce Netshoes.',
     description: 'Maior e-commerce esportivo do Brasil, com milhões de acessos semanais.',
-    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=1036&auto=format&fit=crop',
-    tags: ['Vue.js', 'Vuex', 'TailwindCSS', 'Firebase'],
+    image: '/assets/images/projects/netshoes.jpg',
+    tags: ['Vue.js', 'TypeScript', 'SASS', 'Node.js', 'NestJS', 'Redis', 'MongoDB', 'AWS'],
     liveUrl: 'https://www.netshoes.com.br/',
     
   },
   {
     title: 'Plataforma QuintoAndar.',
     description: 'Maior plataforma de aluguel de imóveis do Brasil, com milhões de acessos semanais.',
-    image: 'https://images.unsplash.com/photo-1553267751-1c148a7280a1?q=80&w=1169&auto=format&fit=crop',
-    tags: ['React', 'Node.js', 'MongoDB', 'Socket.io'],
+    image: '/assets/images/projects/quintoandar.jpg',
+    tags: ['React', 'TypeScript', 'SASS', 'Storybook', 'Java', 'Python', 'MySQL', 'MongoDB', 'AWS'],
     liveUrl: 'https://www.quintoandar.com.br/',
   },
   {
     title: 'Plataforma iSolve (Atta).',
     description: 'Plataforma  distribuição de crédito imobiliário e garantias locatícias utilizada por mais de 1500 imobiliárias.',
     image: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1170&auto=format&fit=crop',
-    tags: ['Vue.js', 'Nuxt.js', 'Express', 'PostgreSQL'],
+    tags: ['Vue.js', 'TypeScript', 'SASS','Storybook', '.NET(C#)', 'MySQL', 'AWS'],
     liveUrl: 'https://garantia.quintocred.com.br/',
   },
-  {
-    title: 'Plataforma de Imóveis NPi.',
-    description: 'Aplicação SSR focada em SEO e performance com Next.js. CMS com gerenciamento de imóveis e clientes.',
-    image: 'https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?q=80&w=1170&auto=format&fit=crop',
-    tags: ['React', 'GraphQL', 'Apollo', 'TypeScript'],
-    liveUrl: 'https://www.npiconsultoria.com.br/',
-   
-  },
+
   {
     title: 'Aplicativo Mobile GabiVegan.',
     description: 'Aplicativo para entrega de comida com rastreamento em tempo real e sistema de avaliação.',
     image: 'https://images.unsplash.com/photo-1565843708714-52ecf69ab81f?q=80&w=1170&auto=format&fit=crop',
     tags: ['React Native', 'Redux', 'Firebase', 'Google Maps API'],
-    liveUrl: 'https://example.com/project6',
+    liveUrl: 'https://gabivegan.com.br/',
   },
 ];
 ---
@@ -84,12 +85,12 @@ const projects: Project[] = [
               
               <div class="flex gap-3">
                 {project.liveUrl && (
-                  <Button href={project.liveUrl} target="_blank" size="sm">
+                  <Button href={project.liveUrl} variant="outline" target="_blank" size="lg">
                     Conhecer projeto
                   </Button>
                 )}
                 {project.repoUrl && (
-                  <Button href={project.repoUrl} target="_blank" variant="outline" size="sm">
+                  <Button href={project.repoUrl} target="_blank" variant="outline" size="lg">
                     Código
                   </Button>
                 )}
