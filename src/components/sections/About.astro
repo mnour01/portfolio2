@@ -5,52 +5,35 @@ import Section from "../ui/Section.astro";
 
 <Section
   id="about"
-  title="Quem sou eu?"
-  subtitle="Me considero um desenvolvedor full stack. Sou especializado em front-end e tecnologias modernas baseadas em JavaScript."
+  title="Qui suis-je ?"
+  subtitle="Je me considère comme un Data Scientist orienté valeur métier, transformant les données brutes en leviers stratégiques et opérationnels."
 >
-  <div class="grid md:grid-cols-2 gap-12 items-center">
-    <div class="relative">
-      <div class="relative z-10 overflow-hidden p-1">
-        <div class="w-full h-full overflow-hidden">
-          <img
-            src="/assets/svgs/about_foto.svg"
-            alt="Desenvolvedor Front-end"
-            class="w-full h-full object-cover"
-          />
-        </div>
+  <div class="grid md:grid-cols-3 gap-12 items-center">
+    <figure class="relative group overflow-hidden rounded-2xl shadow-2xl transition-transform duration-500 hover:scale-105 max-w-md mx-auto md:col-span-1">
+      <!-- Gradient border -->
+      <div class="absolute inset-0 p-1 bg-gradient-to-tr from-primary to-secondary rounded-2xl blur opacity-20 group-hover:opacity-30"></div>
+      <!-- Image container -->
+      <div class="relative aspect-w-1 aspect-h-1 md:aspect-w-3 md:aspect-h-4 bg-gray-100 dark:bg-gray-800">
+        <img
+          src="/assets/svgs/photo mehdi2.png"
+          alt="Photo de moi"
+          loading="lazy"
+          class="w-full h-full object-cover rounded-2xl"
+        />
       </div>
-      <!-- Background decoration -->
-      <div
-        class="absolute top-10 -left-6 w-28 h-28 bg-primary/20 dark:bg-primary/10 rounded-full filter blur-xl"
-      >
-      </div>
-      <div
-        class="absolute -bottom-6 -right-6 w-28 h-28 bg-secondary/20 dark:bg-secondary/10 rounded-full filter blur-xl"
-      >
-      </div>
-    </div>
+      <figcaption class="absolute bottom-4 left-4 bg-white/70 dark:bg-gray-900/70 backdrop-blur-md px-3 py-1 rounded-lg text-sm font-medium text-gray-800 dark:text-gray-200">
+        Me voici en action
+      </figcaption>
+    </figure>
 
-    <div class="space-y-6">
-     
-
-      <p class="text-gray-600 dark:text-gray-300">
-        Capricorniano (workaholic), casado, pai de
-        dois filhos incríveis (menino e menina) e dois pets que acham que são gente. 
-        <br /><br />
-        Já passei por algumas das maiores big techs do Brasil — Kavak, QuintoAndar e Netshoes (Luizalabs). Experiência comprovada em projetos de grande escala e alto impacto (milhões de usuários). <br /><br />
-        Formado em Análise e Desenvolvimento de Sistemas com MBA em Gestão de Tecnologia
-        da Informação. Certificado Scrum, Itil e Vue.js Developer. <br /><br />
-        Já são mais de 15 anos na tecnologia — sendo 8 deles focados em Desenvolvimento Web —
-        já vi de tudo: IE6, jQuery, Flash, Dreamweaver, XAMPP, Web Components ... pude usar React e Vue.js desde suas primeiras versões. Atualmente tenho me aprofundado em IA (tenho trabalhado bastante com automação n8n) .
-        
+    <div class="space-y-6 md:col-span-2 md:pl-6">
+      <p class="text-gray-600 dark:text-gray-300 text-justify">
+        Fort de plus de six ans d’expérience en Data Science et Business Intelligence, j’accompagne les organisations dans la transformation de leurs données en leviers stratégiques et opérationnels. Spécialiste des architectures robustes et évolutives, j’ai piloté et mis en œuvre la conception de KPI métiers, l’automatisation de processus critiques et la migration de pipelines vers Azure, tout en garantissant la qualité, la sécurité et la conformité RGPD des données. Ma maîtrise avancée de Python, R, SQL, Spark et des plateformes cloud (Azure, Databricks) se complète par une expertise pointue en machine learning — de la prévision de séries temporelles à l’explicabilité des modèles — et en intelligence artificielle générative. Communicant aguerri, je facilite l’appropriation des insights par les équipes métier et veille constamment à maximiser l’impact opérationnel de chaque initiative.
       </p>
 
-
-
       <div class="pt-2">
-        <Button href="/cv.pdf" target="_blank" size="lg">Download CV</Button>
+        <Button href="/cv.pdf" target="_blank" size="lg">Télécharger mon CV</Button>
       </div>
     </div>
   </div>
 </Section>
-
