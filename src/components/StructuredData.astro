@@ -10,28 +10,28 @@ interface Props {
 
 const {
   type = 'person',
-  title = 'Renato Khael - Engenheiro de Software',
-  description = 'Portfolio profissional de Renato Khael, Engenheiro de Software e Desenvolvedor Front-end Senior.',
-  imageUrl = 'https://renatokhael.com/android-chrome-512x512.png'
+  title = 'Mehdi Nour - Lead Data',
+  description = 'Portfolio profissional de Mehdi Nour',
+  // imageUrl = 'https://renatokhael.com/android-chrome-512x512.png'
 } = Astro.props;
 
-const baseUrl = 'https://renatokhael.com';
+const baseUrl = 'https://portfolio2-ten-kappa-98.vercel.app/';
 
 // Person Schema
 const personSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
-  "name": "Renato Khael",
+  "name": "Mehdi Nour",
   "url": baseUrl,
   "image": `${baseUrl}/android-chrome-512x512.png`,
   "sameAs": [
-    "https://www.linkedin.com/in/rkhael/",
-    "https://www.youtube.com/@renatokhael"
+    "https://www.linkedin.com/in/nour-mehdi/",
+    // "https://www.youtube.com/@renatokhael"
   ],
   "jobTitle": "Engenheiro de Software",
   "worksFor": {
     "@type": "Organization",
-    "name": "Renato Khael"
+    "name": "Mehdi Nour"
   },
   "description": description
 };
@@ -45,7 +45,7 @@ const websiteSchema = {
   "description": description,
   "author": {
     "@type": "Person",
-    "name": "Renato Khael"
+    "name": "Mehdi Nour"
   },
   "potentialAction": {
     "@type": "SearchAction",
