@@ -2,55 +2,44 @@
 import Button from "../ui/Button.astro";
 ---
 
-<section class="pt-32 pb-20 md:pt-40 md:pb-28">
+<section class="pt-24 pb-16 md:pt-32 md:pb-20">
   <div class="container mx-auto px-4">
-    <div class="flex flex-col justify-center items-center gap-10">
-      <div class="w-[700px] space-y-6">
-        <div class="text-center	">
-          <p class="text-lg font-medium text-[#ff5748] mb-3">
-            Bonjour, Je suis Mehdi Nour
+    <div class="flex flex-col justify-center items-center gap-8">
+      <div class="w-full max-w-2xl mx-auto space-y-6">
+        <div class="text-center">
+          <p class="text-base md:text-lg font-medium text-[#ff5748] mb-2">
+            Bonjour, je suis Mehdi Nour
           </p>
-          <h1 class="text-3xl md:text-5xl lg:text-5xl font-bold leading-tight">
-           Ingénieur en <span
+          <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+            Ingénieur en 
+            <span
               class="bg-gradient-to-r from-[#f48f56] to-[#ff5748] bg-clip-text text-transparent"
-              >Data science</span
-            > & consultant en technologies de l'information.
+            >
+              Data Science
+            </span>
+            & consultant en technologies de l'information.
           </h1>
-          <p class="mt-6 text-lg md:text-xl text-gray-600 dark:text-gray-300">
+          <p class="mt-4 text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-300">
             Fort de plus de 6 ans d'expérience et passé par certaines des plus grandes entreprises en France.
           </p>
         </div>
 
         <div class="flex flex-wrap justify-center items-center gap-4">
           <Button href="#contact" size="lg">Contactez-moi</Button>
-          <Button href="#experience" variant="outline" size="lg"
-            >Mes experiences</Button
-          >
+          <Button href="#experience" variant="outline" size="lg">Mes expériences</Button>
         </div>
-
-       
       </div>
-
-   
     </div>
-    
-    <!-- Animated Pikachu -->
-  
   </div>
 </section>
 
 <style>
   @keyframes pikachuRun {
-    0% {
-      left: -50px;
-    }
-    100% {
-      left: calc(100% + 50px);
-    }
+    0%   { left: -50px; }
+    100% { left: calc(100% + 50px); }
   }
   
   .animate-pikachuRun {
     animation: pikachuRun 10s linear infinite;
   }
 </style>
-
