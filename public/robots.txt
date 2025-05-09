@@ -5,4 +5,4 @@ Allow: /
 # Disallow: /admin/
 
 # Sitemap location
-Sitemap: https://portfolio2-ten-kappa-98.vercel.app/
+Sitemap: https://portfolio2-xi-plum.vercel.app/
